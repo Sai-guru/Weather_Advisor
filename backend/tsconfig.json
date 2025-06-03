@@ -1,16 +1,15 @@
-
 {
   "compilerOptions": {
     "target": "ES2020",
     "module": "CommonJS",
-    "rootDir": "./",               // Includes server.ts and src/
-    "outDir": "dist",              // All compiled JS goes here
+    "rootDir": "./",
+    "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "moduleResolution": "node",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "types": ["node"]              // 👈 ADD THIS LINE
   },
   "include": ["server.ts", "src/**/*"]
 }
-
