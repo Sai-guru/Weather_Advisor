@@ -3,7 +3,7 @@
 export async function fetchWeatherAdvice(location) {
   if (!location) throw new Error("Location is required");
 
-  const response = await fetch("http://localhost:4000/weather", {
+  const response = await fetch("https://weather-advisor.onrender.com/weather", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ location }),
